@@ -87,7 +87,7 @@ const Dashboard = () => {
                 <h1 className={`text-DesBlueText font-bold mb-6 lg:mx-28 text-3xl`}>Overview - today</h1>
 
 
-            <div className=" flex flex-col lg:flex-row lg:flex-wrap lg:justify-center  lg:gap-14">
+            <div className=" flex flex-col lg:grid lg: grid-rows-2   lg:gap-14">
                 {overviewInfo.map((overview, index) =>
                 <Overview 
 
