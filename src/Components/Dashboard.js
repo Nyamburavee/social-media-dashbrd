@@ -63,7 +63,7 @@ const Dashboard = () => {
       ];
     
     return (
-        <div className={ ` flex flex-col bg-yellow-200 dark:bg-veryDbBg p-12`}> 
+        <div className={ ` flex flex-col dark:bg-veryDbBg p-12`}> 
        
             <Header toggleTheme={toggleTheme} darkMode={darkMode}/>
 
