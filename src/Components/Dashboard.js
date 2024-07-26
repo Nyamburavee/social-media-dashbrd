@@ -63,11 +63,11 @@ const Dashboard = () => {
       ];
     
     return (
-        <div className={ ` bg-whiteBg dark:bg-veryDbBg p-12`}> 
+        <div className={ ` flex flex-col lg:justify-center bg-whiteBg dark:bg-veryDbBg p-12`}> 
        
             <Header toggleTheme={toggleTheme} darkMode={darkMode}/>
 
-            <div className=" flex flex-col md:flex-row md:gap-14">
+            <div className=" flex flex-col lg:justify-center lg:flex-row lg:gap-12">
                 {UsersInfo.map((user, index) =>
                     <Users
                         
@@ -84,10 +84,10 @@ const Dashboard = () => {
                 )}
             </div>    
 
-                <h1 className={`text-DesBlueText font-bold mb-6  text-3xl`}>Overview - today</h1>
+                <h1 className={`text-DesBlueText font-bold mb-6 lg:mx-28 text-3xl`}>Overview - today</h1>
 
 
-            <div className=" flex flex-col md:flex-row md:flex-wrap md:gap-14">
+            <div className=" flex flex-col lg:flex-row lg:flex-wrap lg:justify-center  lg:gap-14">
                 {overviewInfo.map((overview, index) =>
                 <Overview 
 
