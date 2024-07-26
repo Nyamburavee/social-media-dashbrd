@@ -35,12 +35,21 @@ const Dashboard = () => {
         setDarkmode(!darkMode);
     }
 
+    const borderColorClasses = {
+        facebook: 'border-facebook',
+        twitter: 'border-twitter',
+        instagram: 'border-instagram',
+        youTube: 'border-brightRed',
+      };
+
     const UsersInfo = [
-        { icon: 'icon-facebook.svg', username: '@nathanf', followers: 1987, change: 12, isIncrease: true, borderColor: 'brightred' },
-        { icon: 'icon-twitter.svg', username: '@nathanf', followers: 1044, change: 99, isIncrease: true, borderColor: 'twitter' },
-        { icon: 'icon-instagram.svg', username: '@realnathanf', followers: 11, change: 1099, isIncrease: true, borderColor: 'insta' },
-        { icon: 'icon-youtube.svg', username: 'Nathan F', followers: 8239, change: 144, isIncrease: false, borderColor: 'youTube' },
+        { icon: 'icon-facebook.svg', username: '@nathanf', followers: 1987, iconup: 'icon-up.svg', change: 12, isIncrease: true, borderColor: 'facebook' },
+        { icon: 'icon-twitter.svg', username: '@nathanf', followers: 1044, iconup: 'icon-up.svg', change: 99, isIncrease: true, borderColor: 'twitter' },
+        { icon: 'icon-instagram.svg', username: '@realnathanf', followers: 11, iconup: 'icon-up.svg', change: 1099, isIncrease: true, borderColor: 'instagram' },
+        { icon: 'icon-youtube.svg', username: 'Nathan F', followers: 8239, icondown: 'icon-down.svg', change: 144, isIncrease: false, borderColor: 'youTube' },
       ];
+
+      
 
       const overviewInfo = [
         { statText: 'Page Views', statValue: 87, icon: 'icon-facebook.svg', iconup: 'icon-up.svg', change: 3, isIncrease: true, },
@@ -68,7 +77,9 @@ const Dashboard = () => {
                         followers={user.followers}
                         change={user.change}
                         isIncrease={user.isIncrease}
-                        borderColor={user.borderColor}
+                        borderClass={borderColorClasses[user.borderColor]}
+                        iconup={user.iconup}
+                        icondown={user.icondown}
                     />
                 )}
             </div>    

@@ -13,6 +13,7 @@ module.exports = {
         facebook: 'hsl(208, 92%, 53%)',
         twitter: 'hsl(203, 89%, 53%)',
         youTube: 'hsl(348, 97%, 39%)',
+        instagram:'hsl(32, 82%, 50%)',
 
         lightToggle: 'hsl(230, 22%, 74%)'
 

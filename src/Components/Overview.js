@@ -14,7 +14,7 @@ const Overview = ({key, statText, statValue, icon, iconup, icondown, change, isI
                     <img src={icon} alt="icon" />
                     <div className={`flex flex-row items-center mt-14 `}>
                         <img className=" w-2 h-2 mr-1" src={isIncrease ? iconup : icondown} alt="change-icon" />
-                        <p className={isIncrease ? 'text-limeGreen' : 'text-brightRed'}>{change} today</p>
+                        <p className={`font-bold ${isIncrease ? 'text-limeGreen' : 'text-brightRed'} `}>{change}%</p>
                     </div>
 
                 </div>
