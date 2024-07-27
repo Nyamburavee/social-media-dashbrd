@@ -3,7 +3,7 @@ import React from "react";
 
 const Overview = ({key, statText, statValue, icon, iconup, icondown, change, isIncrease}) => {
     return (
-            <article className={`  flex flex-row md:w-[200px] p-6  bg-lightGrayishblueCardBg
+            <article className={`  flex flex-row md:w-[220px] p-6  bg-lightGrayishblueCardBg
                  dark:bg-darkDesaturatedBlueCardbg mb-6 hover:brightness-75 dark:hover:brightness-150 cursor-pointer`} >
                 <div className={`  mr-auto `}>
                     <h3 className={` text-darkGbText font-bold mb-10`}>{statText}</h3>
