@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'lg': '1440px',
+
+      },
       colors: {
         /*Primary */
         limeGreen: 'hsl(163, 72%, 41%)',
