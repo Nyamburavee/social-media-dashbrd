@@ -67,7 +67,7 @@ const Dashboard = () => {
        
             <Header toggleTheme={toggleTheme} darkMode={darkMode}/>
 
-            <div className=" flex flex-col  lg:grid lg: grid-flow-col lg:justify-evenly">
+            <div className=" flex flex-col  md:grid md:grid-flow-col md:justify-evenly">
                 {UsersInfo.map((user, index) =>
                     <Users
                         
@@ -87,7 +87,7 @@ const Dashboard = () => {
                 <h1 className={`text-DesBlueText font-bold mb-6 text-3xl`}>Overview - today</h1>
 
 
-            <div className=" flex flex-col lg:grid lg:grid-rows-2 lg:justify-evenly lg:grid-flow-col">
+            <div className=" flex flex-col md:grid md:grid-rows-2 md:justify-evenly md:grid-flow-col">
                 {overviewInfo.map((overview, index) =>
                 <Overview 
 
