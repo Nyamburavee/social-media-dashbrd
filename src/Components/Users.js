@@ -5,7 +5,7 @@ const Users = ({ icon, username, followers, iconup, icondown, change, isIncrease
 
     return (
         <section className=" flex flex-col "> 
-            <div className= {` w-full md:w-[220px]  flex flex-col justify-center items-center bg-lightGrayishblueCardBg dark:bg-darkDesaturatedBlueCardbg
+            <div className= {` w-full md:w-[200px]  flex flex-col justify-center items-center bg-lightGrayishblueCardBg dark:bg-darkDesaturatedBlueCardbg
                  rounded-lg mb-8  p-8 border-t-4 ${borderClass}  hover:brightness-75 dark:hover:brightness-150 cursor-pointer`} >
                 <div className=" flex flex-row justify-center items-center gap-2">
                     <img src={icon} alt="facebook-icon" />
@@ -14,7 +14,7 @@ const Users = ({ icon, username, followers, iconup, icondown, change, isIncrease
                 </div>
                 <h1 className={`text-6xl font-bold text-veryDbBg dark:text-whiteText mt-6`}>{followers}</h1>
                 <p className=" text-DesBlueText mb-2">FOLLOWERS</p>
-                < div className=" flex flex-row justify-center items-center mt-8">
+                < div className=" flex flex-row justify-center items-center mt-4">
                     <img className=" w-2 h-2 mr-1" src={isIncrease ? iconup : icondown} alt="icon-up"/>
                     <p className= {` text-limeGreen font-bold dark:text-whiteText`}>{change} today</p>
 
